@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mitansh Oswal</title>
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:#0f172a;
+    font-family:Arial;
+}
+
+/* color changing title */
+
+.title{
+    font-size:70px;
+    font-weight:bold;
+    animation:colorChange 4s infinite;
+}
+
+@keyframes colorChange{
+    0%{color:#ff4d4d;}
+    20%{color:#ffa500;}
+    40%{color:#00ffcc;}
+    60%{color:#4da6ff;}
+    80%{color:#cc66ff;}
+    100%{color:#ff4d4d;}
+}
+
+/* bouncing text */
+
+.bounce{
+    font-size:45px;
+    color:#00ffcc;
+    animation:bounce 1.2s infinite;
+}
+
+@keyframes bounce{
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(-20px)}
+}
+
+/* typing text */
+
+.typing{
+    font-size:40px;
+    color:#ffa500;
+    border-right:3px solid white;
+    white-space:nowrap;
+    overflow:hidden;
+    width:0;
+    animation:typing 4s steps(20,end) forwards;
+}
+
+@keyframes typing{
+    from{width:0}
+    to{width:270px}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="title">Mitansh Oswal</div>
+
+<br>
+
+<div class="bounce">Mitansh Oswal</div>
+
+<br>
+
+<div class="typing">Mitansh Oswal</div>
+
+</body>
+</html>
